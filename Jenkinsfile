@@ -1,8 +1,8 @@
 pipeline {
-    agebt any 
+    agent any // Corrected from 'agebt'
     stages {
-        stages ("Build") {
-            steps{
+        stage ('Build') { // Corrected: 'stage' keyword is needed here
+            steps {
                 sh 'echo "Build completed..."'
             }
         }
